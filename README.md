@@ -9,6 +9,8 @@ go-calculator/
 ├── cmd/
 │   ├── calc_service/
 │   │   └── main.go                 // Точка входа приложения
+│   ├── tests/
+│   │   └── handlers_test.go        // Тесты для обработчиков
 │
 ├── internal/
 │   ├── constants/
@@ -19,8 +21,6 @@ go-calculator/
 │   │   └── validation.go           // Middleware для валидации
 │   ├── service/
 │   │   └── calculator.go           // Основная логика
-│   ├── tests/
-│   │   └── handlers_test.go        // Тесты для обработчиков
 │
 ├── go.mod                          // Модуль Go
 ├── README.md                       // Информация о проекте
@@ -42,6 +42,11 @@ go-calculator/
     go run ./cmd/calc_service/main.go
 
 3. Отправьте запросы на `http://localhost:8080/api/v1/calculate`
+
+### Запуск тестов
+```bash
+go test ./cmd/tests
+```
 
 ---
 
@@ -110,9 +115,4 @@ or
 {
   "error": "Internal server error"
 }
-```
-
-# Запуск тестов
-```bash
-go test .\internal\tests
 ```
