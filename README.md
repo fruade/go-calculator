@@ -4,7 +4,7 @@
 
 ## Структура проекта
 ```
-calc_service/
+go-calculator/
 │
 ├── cmd/
 │   ├── calc_service/
