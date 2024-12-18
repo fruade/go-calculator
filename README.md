@@ -94,6 +94,10 @@ or
 {
   "error": "Failed to read request body"
 }
+or
+{
+  "error": "Invalid JSON payload"
+}
 ```
 
 ### Ошибка 405
@@ -107,6 +111,9 @@ or
 ```bash
 {
   "error": "Expression is not valid"
+}
+{
+  "error": "division by zero"
 }
 ```
 
